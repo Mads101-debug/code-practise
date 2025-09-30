@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.panel {
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    padding: 1rem;
+    width: 1000px;
+    height: 440px;
+    background-color: beige;
+}
+
+.music-container {
+    position: relative;
+    background-color: lightblue;
+    grid-area: 1 / 1 / 5 / 6;
+    height: auto;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+
+.music-tab {
+  height: 300px;
+  width: 450px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgb(128, 128, 128);
+}
+
+.music-tab img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.overlay {
+  height: 300px;
+  width: 450px;
+  position: absolute; 
+  transform: translate(-451px);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay a {
+  letter-spacing: 0.4rem;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.music-tab:hover .overlay {
+    opacity: 1;
+}
+
+/* Embed Styling */
+.embed-wrapper {
+  width: 50rem;
+  height: 20rem;
+  background-color: bisque;
+}

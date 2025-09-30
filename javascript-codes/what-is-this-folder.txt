@@ -1,0 +1,15 @@
+    
+
+
+
+
+
+
+
+
+
+
+    WHAT IS THIS FOLDER??
+
+    I use deepseek to generate JavaScript code for me and then I 
+    print it out and annontate it to understand it.
